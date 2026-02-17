@@ -5,8 +5,6 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useTheme } from "next-themes";
 
-// import { allBlogs } from "content-collections";
-
 import { Button } from "@/components/ui/button";
 import { Download, ExternalLink, Mail } from "lucide-react";
 
@@ -15,8 +13,7 @@ import { Particles } from "@/components/magicui/particles";
 import Services from "./_components/services";
 import TechStack from "./_components/tech-stack";
 import ProjectCard from "@/components/project-card";
-// import Testimonials from "./_components/testimonials";
-// import BlogCard from "../blog/_components/blog-card";
+
 import Image from "next/image";
 
 export default function Page() {
@@ -26,13 +23,6 @@ export default function Page() {
   useEffect(() => {
     setColor(theme === "dark" ? "#ffffff" : "#000000");
   }, [theme]);
-
-  // const latestBlog = allBlogs
-  //   .sort(
-  //     (a, b) =>
-  //       new Date(b.publishedOn).getTime() - new Date(a.publishedOn).getTime()
-  //   )
-  //   .slice(0, 3);
 
   return (
     <main>
@@ -140,7 +130,7 @@ export default function Page() {
                 fill
                 className="object-cover object-top scale-[1.3]"
                 priority
-                quality={100}
+                quality={75}
               />
             </div>
           </div>
@@ -178,27 +168,6 @@ export default function Page() {
 
         <ProjectCard />
       </section>
-
-      {/* Testimonials */}
-      {/* <section id="testimonials" className="container">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-12">
-          Testimonials
-        </h2>
-        <Testimonials />
-      </section> */}
-
-      {/* Recent Blog */}
-      {/* <section className="container py-12 md:py-24">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-12">
-          Recent Blog
-        </h2>
-
-        <div className="flex gap-5 flex-wrap">
-          {latestBlog.map((blog) => (
-            <BlogCard key={blog.slug} {...blog} />
-          ))}
-        </div>
-      </section> */}
     </main>
   );
 }

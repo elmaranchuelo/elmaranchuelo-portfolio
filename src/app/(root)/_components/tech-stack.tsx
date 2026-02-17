@@ -34,11 +34,10 @@ const frontEndTech = [
   { name: "CSS", slug: "css" },
   { name: "jQuery", slug: "jquery" },
   { name: "React", slug: "react" },
-  { name: "NextJS", slug: "nextdotjs/gray"},
+  { name: "NextJS", slug: "nextdotjs/gray" },
   { name: "Tailwind CSS", slug: "tailwindcss" },
   { name: "Shadcn UI", slug: "shadcnui/gray" },
   { name: "Wordpress", slug: "wordpress" },
-
 ];
 
 // Dev Tools

@@ -19,7 +19,7 @@ elmaranchuelo is a personal portfolio website showcasing projects, a blog, and o
 1. **Clone the Repository**  
    ```sh
    git clone https://github.com/elmaranchuelo/elmaranchuelo-portfolio.git
-   cd portfolio
+   cd elmaranchuelo-portfolio
    ```
 2. **Install Dependencies**  
    ```sh
