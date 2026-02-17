@@ -157,13 +157,6 @@ export default function Page() {
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">
             Work Experiences
           </h2>
-
-          <Link href={"/projects"} aria-label="See all projects">
-            <Button variant={"outline"} className="ml-0.5">
-              See More
-              <ExternalLink className="size-4" />
-            </Button>
-          </Link>
         </div>
 
         <ProjectCard />
