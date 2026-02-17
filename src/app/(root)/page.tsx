@@ -1,20 +1,14 @@
 "use client";
-
-import { useEffect, useState } from "react";
-
 import Link from "next/link";
+import Image from "next/image";
+import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-
 import { Button } from "@/components/ui/button";
-import { Download, ExternalLink, Mail } from "lucide-react";
-
+import { Download, Mail } from "lucide-react";
 import { Particles } from "@/components/magicui/particles";
-
 import Services from "./_components/services";
 import TechStack from "./_components/tech-stack";
 import ProjectCard from "@/components/project-card";
-
-import Image from "next/image";
 
 export default function Page() {
   const { theme } = useTheme();
@@ -45,7 +39,7 @@ export default function Page() {
               </h1>
 
               <p className="text-balance text-muted-foreground text-lg">
-                Experienced Full-Stack Developer with over 8 years of building
+                Experienced Software Engineer with over 8 years of building
                 responsive UIs, developing scalable APIs, and enhancing user
                 experiences. Skilled in both frontend and backend development,
                 with a focus on creating efficient, secure systems. Always
@@ -63,7 +57,7 @@ export default function Page() {
                 </Button>
               </Link>
 
-              <Link href="/resume.pdf" target="_blank">
+              <Link href="/resume - 2026.pdf" target="_blank">
                 <Button aria-label="Download Resume">
                   <Download className="mr-2 h-4 w-4" />
                   Resume
@@ -147,7 +141,6 @@ export default function Page() {
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl mb-12">
           Technology Stack
         </h2>
-
         <TechStack />
       </section>
 
@@ -158,7 +151,6 @@ export default function Page() {
             Work Experiences
           </h2>
         </div>
-
         <ProjectCard />
       </section>
     </main>
