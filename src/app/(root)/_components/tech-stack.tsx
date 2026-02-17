@@ -34,11 +34,10 @@ const frontEndTech = [
   { name: "CSS", slug: "css" },
   { name: "jQuery", slug: "jquery" },
   { name: "React", slug: "react" },
-  { name: "NextJS", slug: "nextdotjs/gray"},
+  { name: "NextJS", slug: "nextdotjs/gray" },
   { name: "Tailwind CSS", slug: "tailwindcss" },
   { name: "Shadcn UI", slug: "shadcnui/gray" },
   { name: "Wordpress", slug: "wordpress" },
-
 ];
 
 // Dev Tools
@@ -85,6 +84,7 @@ const StackList: React.FC<TechStackProps> = ({ items }) => (
                 width={55}
                 height={55}
                 loading="lazy"
+                unoptimized
               />
             </div>
             <span className="text-sm whitespace-nowrap">{tech.name}</span>
